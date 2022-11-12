@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html {
+    font-weight: bolder;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}@media (min-width: 250px) {
+        body{
+          width: 250px;
+        }
+      }
+@media (min-width: 550px) {
+    body{
+        width: 600px;
+    }
+}
+@media (min-width: 650px) {
+    body{
+        width: 100%;
+    }
+}
+body {
+    /* https://images.unsplash.com/photo-1582634424802-b4a94fcfbce6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG9zaG9wfGVufDB8fDB8fA%3D%3D&w=1000&q=80 */
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('https://free4kwallpapers.com/uploads/originals/2022/08/28/porsche-wallpaper.jpg'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}#additembut {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}.article1, .article2, .article3 {
+    color: rgb(0, 0, 0);
+    /* color: rgb(255, 0, 0); */
+
+}#hero {
+    width: 100vw;
+    /* height: 90%; */
+    /* 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9RHO9AgLJJaI20PTZwGTDQkWXS3sEFEG0mEzLxTHc5kzrZz-HkraiIKvCuYAWQSEV-xo&usqp=CAU */
+    /* background-image: url('https://free4kwallpapers.com/uploads/originals/2022/08/28/porsche-wallpaper.jpg'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    /* padding: 12px;  */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px 200px 200px 300px;
+    grid-gap: 10px;
+}.first {
+    width: 100vw;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px 200px 200px 300px;
+    grid-gap: 20px;
+}.second {
+    width: 100vw;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px 200px 200px 300px;
+    grid-gap: 20px;
+}nav {
+    border-radius: 10px;
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-column: 1 / -1;
+    color: chartreuse;
+}aside {
+    margin-top: 25px;
+    width: 200px;
+    border-radius: 10px;
+    background-image: url('https://free4kwallpapers.com/uploads/originals/2022/08/28/porsche-wallpaper.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-row: 2 / span 2;
+    color: red;
+}.box7 {
+    background-image: url('../image/3.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.box8 {
+    background-image: url('../image/4.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.box9 {
+    background-image: url('../image/70.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana10 {
+    background-image: url('../image/12.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}a {
+    color: rgb(0, 0, 0);
+
+}.rana11 {
+    background-image: url(' ../image/6.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana12 {
+    background-image: url('../image/14.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana13 {
+    background-image: url('../image/29.avif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana14 {
+    background-image: url('../image/31.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana15 {
+    background-image: url('../image/32.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana16 {
+    background-image: url('../image/39.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana17 {
+    background-image: url('../image/44.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana18 {
+    background-image: url('../image/45.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana19 {
+    background-image: url('../image/47.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.great20 {
+    background-image: url('../image/48.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.great21 {
+    background-image: url('../image/49.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.great22 {
+    background-image: url('../image/71.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana22 {
+    background-image: url('../image/33.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.rana23 {
+    background-image: url('../image/33.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: red;
+}.box10, .box11, .box12, .box13, .box14, .box15, .box16, .rana17, .rana18, .rana19, .great20, .great21, .great22, .rana22, .rana23 {
+    border-radius: 10px;
+    /* background-image: url('https://free4kwallpapers.com/uploads/originals/2015/10/02/wild-flowers.jpg'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    margin-right: 0;
+}.rana17, .rana18, .rana19, .great20, .great21, .great22, .rana22, .rana23 {
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-right: 15px;
+}.box1, .box2, .box3, .box4, .box5, .box6 {
+    color: rgb(0, 0, 0);
+    /* color: rgb(255, 0, 0); */
+
+}.box7, .box8, .box9, .rana10, .rana11, .rana12, .rana13, .rana14, .rana15, .rana16 {
+    margin-top: 25px;
+    margin-right: 15px;
+}.main-content {
+    border-radius: 10px;
+    background-image: url('../image/63.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* height: 200px; */
+    grid-column: 1/ -1;
+    color: rgb(255, 0, 0);
+    height: 340px;
+}footer {
+    border-radius: 10px;
+    background-image: url('../image/64.jfif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* height: 200px; */
+    grid-column: 1/ -1;
+    color: rgb(255, 0, 0);
+    height: 940px;
+}#shpm {
+    border-radius: 10px;
+    /* background-image: url('../image/64.jfif'); */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* height: 200px; */
+    grid-column: 1/ -1;
+    color: rgb(255, 0, 0);
+    height: 940px;
+
+}#shpm {
+    width: 100vw;
+    /* height: 90%; */
+    /* 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9RHO9AgLJJaI20PTZwGTDQkWXS3sEFEG0mEzLxTHc5kzrZz-HkraiIKvCuYAWQSEV-xo&usqp=CAU */
+    /* background-image: url('https://free4kwallpapers.com/uploads/originals/2022/08/28/porsche-wallpaper.jpg'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+    /* padding: 12px;  */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 80px 200px 200px 300px; */
+    grid-gap: 10px;
+
+}#shpm div {
+    width: 200px;
+    height: 400px;
+    /* margin-top: 10%; */
+    /* text-align: center; */
+}#shp1 {
+    background-image: url('../image/73.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}#shp2 {
+    position: relative;
+    grid-column: 1 / span 3;
+    background-image: url('../image/75.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}#shp3 {
+    /* grid-area: 5 / 1 3/1; */
+    grid-column: 5 / span -2;
+    background-image: url('../image/76.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}#shp4 {
+    grid-column: 5 / span 8;
+    background-image: url('../image/74.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}#top {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin-right: 85px;
+    right: 0;
+    bottom: 10px;
+    border-radius: 60%;
+}#top1 {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin-right: 140px;
+    right: 0;
+    bottom: 10px;
+    border-radius: 50%;
+}#top2 {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    margin-right: 30px;
+    right: 0;
+    bottom: 10px;
+    border-radius: 50%;
+
+}.itemstext {
+    color: darkblue;
+}.items {
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 835px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+}#additem {
+    background-image: url('../image/65.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}.Jewellery {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 5px;
+    justify-items: center;
+}.Jewellery > a {
+    width: 300px;
+}.jewellery1 {
+    background-image: url('../image/3.gif');
+}.jewellery2 {
+    background-image: url('../image/41.gif');
+}.jewellery3 {
+    background-image: url('../image/1.gif');
+}.jewellery4 {
+    background-image: url('../image/50.gif');
+}.jewellery5 {
+    background-image: url('../image/54.gif');
+}.jewellery6 {
+    background-image: url('../image/55.gif');
+}.jewellery7 {
+    background-image: url('../image/69.gif');
+}.jewellery8 {
+    background-image: url('../image/67.gif');
+    /* background-color: rgba(96,83,85,1); */
+}.jewellery9 {
+    background-image: url('../image/61.gif');
+    /* background-color: rgba(96,83,85,1); */
+}.jewellery10 {
+    background-image: url('../image/59.gif');
+}.jewellery11 {
+    background-image: url('../image/60.gif');
+}.jewellery12 {
+    background-image: url('../image/68.gif');
+}.jewellery13 {
+    background-image: url('../image/91.gif');
+}.jewellery14 {
+    background-image: url('../image/40.gif');
+    background-color: rgba(96, 83, 85, 1);
+}.jewellery15 {
+    background-image: url('../image/58.gif');
+    background-color: rgba(96, 83, 85, 1);
+}.jewellery16 {
+    background-image: url('../image/53.gif');
+}.jewellery1, .jewellery2, .jewellery3, .jewellery4, .jewellery5, .jewellery6, .jewellery7, .jewellery8, .jewellery9, .jewellery10, .jewellery11, .jewellery12, .jewellery13, .jewellery14, .jewellery15, .jewellery16 {
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}#jewellerydil {
+    background-color: transparent;
+    border: none;
+}@media screen and (max-width: 1220px) {
+    .items {
+        margin-top: 30px;
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+}@media screen and (max-width: 425px) {
+    .items {
+        margin-top: 30px;
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 20px;
+    }
+}@media screen and (max-width: 300px) {
+    .items {
+        margin-top: 30px;
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+}#formsdiv>footer {
+    width: 100vw;
+    /* height: 90%; */
+    /* 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9RHO9AgLJJaI20PTZwGTDQkWXS3sEFEG0mEzLxTHc5kzrZz-HkraiIKvCuYAWQSEV-xo&usqp=CAU */
+    /* background-image: url('https://free4kwallpapers.com/uploads/originals/2022/08/28/porsche-wallpaper.jpg'); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    /* padding: 12px;  */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px 200px 200px 300px;
+    grid-gap: 10px;
+}#additemsearch:hover {
+    background-color: brown;
+}#additemsearch:focus {
+    background-color: black;
+    color: wheat;
+}#additemsearch {
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+}.dropbtn {
+    background-color: khaki;
+    color: white;
+    padding: 16px;
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 20%;
+    font-style: italic;
+}.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 440px;
+    height: 50px;
+}.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(96, 83, 85, 1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 17px;
+
+}.dropdown-content a {
+    color: burlywood;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* font-size: 1rem; */
+}.dropdown-content a:hover {
+    background-color: brown;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}.dropdown:hover .dropdown-content {
+    display: block;
+    font-weight: bold;
+    color: orange;
+    overflow: scroll;
+}.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    font-weight: bold;
+    color: cornflowerblue;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}#additemsJewellery {
+    background-color: rgba(96, 83, 85, 1);
+}input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}input[type=submit]:hover {
+    background-color: deeppink;
+    border-radius: 20px;
+}input:hover {
+    background-color: brown;
+    border-radius: 20px;
+}input:focus {
+    background-color: black;
+    text-align: center;
+    color: wheat;
+}input {
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    background-color: transparent;
+}#additems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#additems {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+}#addbutton {
+    background-color: transparent;
+}#searchselectbox {
+    width: 100px;
+}.dark-light {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}.dark-light i {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}.dark-light i.sun {
+    opacity: 0;
+    pointer-events: none;
+    width: 70px;
+    height: 30px;
+}#hard_heart {
+    /* margin: 5px; */
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+}#relaxe_heart {
+    /* margin: 5px; */
+    /* margin-top: 0px; */
+    /* margin-left: 120px; */
+    width: 90px;
+    height: 70px;
+}.dark-light.active i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
+}.Dresses {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 5px;
+    justify-items: center;
+}.Dresses > a {
+    width: 300px;
+}.Dresses1 {
+    background-image: url('../image/dresses/1.jfif');
+}.Dresses2 {
+    background-image: url('../image/dresses/2.jfif');
+}.Dresses3 {
+    background-image: url('../image/dresses/3.jpg');
+}.Dresses4 {
+    background-image: url('../image/dresses/4.jfif');
+}.Dresses5 {
+    background-image: url('../image/dresses/5.jfif');
+}.Dresses6 {
+    background-image: url('../image/dresses/6.jfif');
+}.Dresses7 {
+    background-image: url('../image/dresses/7.jfif');
+}.Dresses8 {
+    background-image: url('../image/dresses/8.jfif');
+}.Dresses9 {
+    background-image: url('../image/dresses/9.jfif');
+    /* background-color: rgba(96,83,85,1); */
+}.Dresses10 {
+    background-image: url('../image/dresses/10.jfif');
+    /* background-color: rgba(96,83,85,1); */
+}.Dresses11 {
+    background-image: url('../image/dresses/11.jfif');
+}.Dresses12 {
+    background-image: url('../image/dresses/12.jfif');
+    /* background-color: rgba(96, 83, 85, 1); */
+}.Dresses13 {
+    background-image: url('../image/dresses/13.jfif');
+}.Dresses14 {
+    background-image: url('../image/dresses/14.jfif');
+}.Dresses15 {
+    background-image: url('../image/dresses/15.jpg');
+    /* background-color: rgba(96, 83, 85, 1); */
+}.Dresses16 {
+    background-image: url('../image/dresses/16.jfif');
+    /* background-color: rgba(96, 83, 85, 1); */
+}.Dresses1, .Dresses2, .Dresses3, .Dresses4, .Dresses5, .Dresses6, .Dresses7, .Dresses8, .Dresses9, .Dresses10, .Dresses11, .Dresses12, .Dresses13, .Dresses14, .Dresses15, .Dresses16 {
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}/* box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12); */

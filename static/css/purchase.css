@@ -1,0 +1,239 @@
+/* +++++++++++++++++++++++++++++++++++=Show Hide */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-style: italic;
+}html {
+  text-align: center;
+}input:placeholder-shown {
+  text-align: center;
+}body {
+
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  padding-left: 18.7%;
+  padding-top: 22%;
+  /* align-items:center; */
+  /* background-image: url(https://i.pinimg.com/564x/47/cd/50/47cd506bd6e4f71d9f75e153c28fb7b3.jpg);
+    background-size: 100% 100%; */
+}.main-div {
+  color: brown;
+  font-weight: bolder;
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  background-image: url(https://i.pinimg.com/564x/81/76/c6/8176c68313e146bc1e30f748bf5dedc5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border-radius: 50px; */
+  clip-path: polygon(0% 0%, 10% 0, 10% 9%, 8% 9%, 9% 18%, 6% 10%, 0 10%);
+  transition: all 0.3s;
+}#top {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  z-index: 1000;
+  margin-right: 30px;
+  right: 0;
+  bottom: 0;
+}/* #go{
+	width: 80px;
+	height:80px;
+	position: fixed;
+	z-index: 1000;
+	margin-right: 30px;
+	right: 0;
+	bottom: 0;
+} */
+.price {
+  color: black;
+}a {
+  text-decoration: none;
+}.main-div:hover {
+  width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 51%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+}.main-div h1 {
+  margin: 30px 0;
+  color: rgb(152, 200, 255);
+  font-family: algerian;
+}pre {
+  color: rgb(112, 165, 42);
+  line-height: 150%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}/* .main-div p{
+    color: #fff;
+    line-height: 150%;
+} */
+.main-div h3 {
+  color: rgb(228, 176, 176);
+  margin-top: 20px;
+  font-family: monospace;
+}/* *************************************************** */
+/* body {
+    background-image: url('https://img.freepik.com/free-vector/forms-concept-illustration_114360-4797.jpg?w=2000');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+} */
+h1 {
+  color: rgb(53, 7, 179);
+}body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+}.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+}.col-25,.col-50,.col-75 {
+  padding: 0 16px;
+}.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  height: 100%;
+}input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}label {
+  margin-bottom: 10px;
+  display: block;
+}.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}.btn:hover {
+  background-color: #45a049;
+}a {
+  color: #2196F3;
+}hr {
+  border: 1px solid lightgrey;
+}span.price {
+  float: right;
+  color: grey;
+}/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (min-width: 250px) {
+  body{
+    width: 250px;
+  }
+  .row {
+    flex-direction: row-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+  #output{
+    margin-top: 50px;
+  }
+}
+@media (min-width: 550px) {
+  body{
+    width: 600px;
+  }
+  .row {
+    flex-direction: row-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+  #output{
+    margin-top: 50px;
+  }
+}
+@media (min-width: 650px) {
+  body{
+    width: 100%;
+  }
+  .row {
+    flex-direction: row-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+  #output{
+    margin-top: 50px;
+  }
+}#output {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+}.text {
+  color: red;
+}#top {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  margin-right: 85px;
+  right: 0;
+  bottom: 10px;
+  border-radius: 60%;
+}#top1 {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  margin-right: 140px;
+  right: 0;
+  bottom: 10px;
+  border-radius: 50%;
+}#top2 {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  margin-right: 30px;
+  right: 0;
+  bottom: 10px;
+  border-radius: 50%;
+
+}#arr {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}#arr:hover {
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  transition: 0.5s;
+}
+
+
+
