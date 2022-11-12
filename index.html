@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/home.css">
+    <link rel="shortcut icon" href="../static/image/90.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <!-- main div (hero) like body-->
+    <div id="hero">
+        <!-- <nav>navbar</nav> -->
+        <article class="box6"><a href="#ready_to_delivery" style="color: red;">ready_to_delivery</a></article>
+        <!-- filter -->
+        <article class="box2">Filter
+            <select name="select" id="select">
+                <option value="">Price</option>
+                <option value="">0-500</option>
+                <option value="">0-1000</option>
+                <option value="">0-2000</option>
+                <option value="">500-2000</option>
+                <option value="">5000</option>
+                <option value="">50000</option>
+                <option value="">500000</option>
+                <option value="">1000000</option>
+                <option value="">Unlimited</option>
+
+            </select>
+            <!-- <input type="text"> -->
+        </article>
+        <!-- Area -->
+        <article class="box3">Area
+            <select name="select" id="select">
+                <option value="">pakistan</option>
+                <option value="">Islamabad</option>
+                <option value="">Rawalpindi</option>
+                <option value="">Karachi</option>
+                <option value="">Lahore</option>
+                <option value="">Faisalabad</option>
+                <option value="">Gujranwala</option>
+                <option value="">Peshawar</option>
+                <option value="">Multan</option>
+                <option value="">Hyderabad</option>
+            </select>
+            <!-- <input type="text"> -->
+        </article>
+
+        <article class="box4"><a href="#Wishlist">Wishlist</a></article>
+        <article class="box5"><a href="#Purchase_Order">Purchase_Order</a></article>
+        <!-- Search -->
+        <article class="box1">Search
+            <select name="select">
+                <option value="">Jewellery</option>
+                <option value="">Dresses</option>
+                <option value="">Services</option>
+                <option value="">Shoes</option>
+                <option value="">Accessories</option>
+                <option value="">Computers/laptops</option>
+                <option value="">Furniture</option>
+                <option value="">Appliances</option>
+                <option value="">Grocery</option>
+                <option value="">Utensils</option>
+                <option value="">Fresh_Foods</option>
+                <option value="">Travel</option>
+                <option value="">Cars</option>
+                <option value="">Bikes</option>
+                <option value="">Medical</option>
+                <option value="">Used_Items</option>
+                <option value="">Mobiles</option>
+            </select>
+            <!-- <input type="text"> -->
+        </article>
+
+        <article class="box7"><a href="#Jewellery">Jewellery</a></article>
+        <article class="box8"><a href="#Dresses">Dresses</a></article>
+        <aside><a href="#team">How To Join Us
+                <p style="margin-top: 20px;">Be A Part Of Our Team</p>
+            </a></aside>
+        <article class="box9"><a href="#Shoes">Shoes</a></article>
+        <article class="rana10"><a href="#Accessories">Accessories</a></article>
+        <article class="rana11"><a href="#laptops">Computers/laptops</a></article>
+        <article class="rana12"><a href="#Furniture">Furniture</a></article>
+        <article class="rana13"><a href="#Appliances">Appliances</a></article>
+        <article class="rana14"><a href="#Grocery">Grocery</a></article>
+        <article class="rana15"><a href="#Utensils">Utensils</a></article>
+        <article class="rana16"><a href="#Fresh_Foods">Fresh_Foods</a></article>
+        <article class="rana17"><a href="#Travel">Travel</a></article>
+        <article class="rana18"><a href="#Cars">Cars</a></article>
+        <article class="rana19"><a href="#Bikes">Bikes</a></article>
+        <article class="great20"><a href="#Medical">Medical</a></article>
+        <article class="great21"><a href="#Used_Items">Used_Items</a></article>
+        <article class="great22"><a href="#Mobiles">Mobiles</a></article>
+        <section class="main-content">Tax Free Shopping Mart
+        </section>
+
+        <!-- Add Item -->
+        <footer id="team">Be A Part Of Our Team
+            <p>If you want to be a member of our Team Please add any item proudly</p>
+            <button id="additembut"><a href="#additem"> add your item and your Price</a></button>
+        </footer>
+        <!-- Add Item Drop Down -->
+        <footer id="additem">
+            <h1>Add Your Items Catagory:</h1>
+            <div class="dropdown" id="additemdrop">
+                <button class="dropbtn">Choose_Your_Items_Catagory:</button>
+                <div class="dropdown-content">
+                    <a href="#additemsJewellery">Jewellery</a>
+                    <a href="#additemsDresses">Dresses</a>
+                    <a href="#additemsServices">Services</a>
+                    <a href="#additemsShoes">Shoes</a>
+                    <a href="#additemsAccessories">Accessories</a>
+                    <a href="#additemslaptops">Computers/laptops</a>
+                    <a href="#additemsFurniture">Furniture</a>
+                    <a href="#additemsAppliances">Appliances</a>
+                    <a href="#additemsGrocery">Grocery</a>
+                    <a href="#additemsUtensils">Utensils</a>
+                    <a href="#additemsFresh_Foods">Fresh_Foods</a>
+                    <a href="#additemsTravel">Travel</a>
+                    <a href="#additemsCars">Cars</a>
+                    <a href="#additemsBikes">Bikes</a>
+                    <a href="#additemsMedical">Medical</a>
+                    <a href="#additemsUsed_Items">Used_Items</a>
+                    <a href="#additemsMobiles">Mobiles</a>
+                </div>
+            </div><br><br>
+            <input type="text" id="additemsearch">
+        </footer>
+        <!-- Jewellery -->
+        <footer id="Jewellery">Jewellery
+            <div class="items" id="Jewellery">
+                <a href="./static/image/3.gif" title="Click Me" target="_rana" class="jewellery1">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'><button id="jewellerydil" onclick="scrolldiv()"><img id="hard_heart"
+                                    src="./static/image/78.gif" alt=""></button></i>
+                        <i class='bx bx-sun sun'><button id="jewellerydil" onclick="scrolldiv()"><img id="relaxe_heart"
+                                    src="./static/image/79.gif" alt=""></button></i>
+                    </div>
+                </a>
+                <a href="./static/image/41.gif" title="Click Me" target="_rana" class="jewellery2"> </a>
+                <a href="./static/image/1.gif" title="Click Me" target="_rana" class="jewellery3"> </a>
+                <a href="./static/image/50.gif" title="Click Me" target="_rana" class="jewellery4"> </a>
+                <a href="./static/image/54.gif" title="Click Me" target="_rana" class="jewellery5"> </a>
+                <a href="./static/image/55.gif" title="Click Me" target="_rana" class="jewellery6"> </a>
+                <a href="./static/image/69.gif" title="Click Me" target="_rana" class="jewellery7"> </a>
+                <a href="./static/image/67.gif" title="Click Me" target="_rana" class="jewellery8"> </a>
+                <a href="./static/image/61.gif" title="Click Me" target="_rana" class="jewellery9"> </a>
+                <a href="./static/image/59.gif" title="Click Me" target="_rana" class="jewellery10"> </a>
+                <a href="./static/image/60.gif" title="Click Me" target="_rana" class="jewellery11"> </a>
+                <a href="./static/image/68.gif" title="Click Me" target="_rana" class="jewellery12"> </a>
+                <a href="./static/image/91.gif" title="Click Me" target="_rana" class="jewellery13"> </a>
+                <a href="./static/image/40.gif" title="Click Me" target="_rana" class="jewellery14"> </a>
+                <a href="./static/image/58.gif" title="Click Me" target="_rana" class="jewellery15"> </a>
+                <a href="./static/image/53.gif" title="Click Me" target="_rana" class="jewellery16"> </a>
+            </div>
+        </footer>
+        <footer id="Dresses">Dresses
+            <div class="items" id="Dresses">
+                <a href="./static/image/dresses/1.jfif" title="Click Me" target="_rana" class="Dresses1">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'><button id="jewellerydil" onclick="scrolldiv()"><img id="hard_heart"
+                                    src="./static/image/78.gif" alt=""></button></i>
+                        <i class='bx bx-sun sun'><button id="jewellerydil" onclick="scrolldiv()"><img id="relaxe_heart"
+                                    src="./static/image/79.gif" alt=""></button></i>
+                    </div>
+                </a>
+                <a href="./static/image/dresses/2.jfif" title="Click Me" target="_rana" class="Dresses2"> </a>
+                <a href="./static/image/dresses/3.jpg" title="Click Me" target="_rana"  class="Dresses3"> </a>
+                <a href="./static/image/dresses/4.jfif" title="Click Me" target="_rana" class="Dresses4"> </a>
+                <a href="./static/image/dresses/5.jfif" title="Click Me" target="_rana" class="Dresses5"> </a>
+                <a href="./static/image/dresses/6.jfif" title="Click Me" target="_rana" class="Dresses6"> </a>
+                <a href="./static/image/dresses/7.jfif" title="Click Me" target="_rana" class="Dresses7"> </a>
+                <a href="./static/image/dresses/8.jfif" title="Click Me" target="_rana" class="Dresses8"> </a>
+                <a href="./static/image/dresses/9.jfif" title="Click Me" target="_rana" class="Dresses9"> </a>
+                <a href="./static/image/dresses/10.jfif" title="Click Me" target="_rana" class="Dresses10"> </a>
+                <a href="./static/image/dresses/11.jfif" title="Click Me" target="_rana" class="Dresses11"> </a>
+                <a href="./static/image/dresses/12.jfif" title="Click Me" target="_rana" class="Dresses12"> </a>
+                <a href="./static/image/dresses/13.jfif" title="Click Me" target="_rana" class="Dresses13"> </a>
+                <a href="./static/image/dresses/14.jfif" title="Click Me" target="_rana" class="Dresses14"> </a>
+                <a href="./static/image/dresses/15.jpg" title="Click Me" target="_rana" class="Dresses15"> </a>
+                <a href="./static/image/dresses/16.jfif" title="Click Me" target="_rana" class="Dresses16"> </a>
+            </div>
+        </footer>
+        <footer id="Services">Services</footer>
+        <footer id="Shoes">Shoes</footer>
+        <footer id="Accessories">Accessories</footer>
+        <footer id="laptops">Computers/laptops</footer>
+        <footer id="Furniture">Furniture</footer>
+        <footer id="Appliances">Appliances</footer>
+        <footer id="Grocery">Grocery</footer>
+        <footer id="Utensils">Utensils</footer>
+        <footer id="Fresh_Foods">Fresh_Foods</footer>
+        <footer id="Travel">Travel</footer>
+        <footer id="Cars">Cars</footer>
+        <footer id="Bikes">Bikes</footer>
+        <footer id="Medical">Medical</footer>
+        <footer id="Used_Items">Used_Items</footer>
+        <footer id="Mobiles">Mobiles</footer>
+
+        <!-- Add Items In Jewellery-->
+        <footer id="additemsJewellery">Add Items In Jewellery
+            <div class="items" id="additems">
+                <form method="post" action="/Jewellery" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname" id="Jewelleryproduct">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsDresses">Add Items In Dresses
+            <div class="items" id="additems">
+                <form method="post" action="/Dresses" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsServices">Add Items In Services
+            <div class="items" id="additems">
+                <form method="post" action="/Services" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsShoes">Add Items In Shoes
+            <div class="items" id="additems">
+                <form method="post" action="/Shoes" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsAccessories">Add Items In Accessories
+            <div class="items" id="additems">
+                <form method="post" action="/Accessories" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemslaptops">Add Items In Computers/laptops
+            <div class="items" id="additems">
+                <form method="post" action="/laptops" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsFurniture">Add Items In Furniture
+            <div class="items" id="additems">
+                <form method="post" action="/Furniture" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsAppliances">Add Items In Appliances
+            <div class="items" id="additems">
+                <form method="post" action="/Appliances" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsGrocery">Add Items In Grocery
+            <div class="items" id="additems">
+                <form method="post" action="/Grocery" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsUtensils">Add Items In Utensils
+            <div class="items" id="additems">
+                <form method="post" action="/Utensils" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsFresh_Foods">Add Items In Fresh_Foods
+            <div class="items" id="additems">
+                <form method="post" action="/Fresh_Foods" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsTravel">Add Items In Travel
+            <div class="items" id="additems">
+                <form method="post" action="/Travel" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsCars">Add Items In Cars
+            <div class="items" id="additems">
+                <form method="post" action="/Cars" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsBikes">Add Items In Bikes
+            <div class="items" id="additems">
+                <form method="post" action="/Bikes" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsMedical">Add Items In Medical
+            <div class="items" id="additems">
+                <form method="post" action="/Medical" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsUsed_Items">Add Items In Used_Items
+            <div class="items" id="additems">
+                <form method="post" action="/Used_Items" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="additemsMobiles">Add Items In Mobiles
+            <div class="items" id="additems">
+                <form method="post" action="/Mobiles" target="_rana">
+                    <label for="fname">Your_Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter_Your_Names">
+
+                    <label for="lname">Product_Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Name">
+
+                    <label for="country">Product_Price</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter_Your_Item's_Price">
+                    Your_Images_Here: <br><br> <input type="file" id="addbutton">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <footer id="Wishlist">Wishlist
+            <div class="items" id="Jewellery">
+                <a href="./purchase.html#Jewellery" onclick="" title="Click Me" target="_rana" class="jewellery1">
+                    <img id="relaxe_heart" src="./static/image/79.gif" alt="">
+                </a>
+        </footer>
+        <footer id="Purchase_Order">Purchase_Order
+
+        </footer>
+
+        <footer id="ready_to_delivery">ready_to_delivery
+            <div class="items" id="Jewellery">
+                <a href="./static/image/3.gif" title="Click Me" target="_rana" class="jewellery1">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'><button id="jewellerydil" onclick="scrolldiv()"><img id="hard_heart"
+                                    src="./static/image/78.gif" alt=""></button></i>
+                        <i class='bx bx-sun sun'><button id="jewellerydil" onclick="scrolldiv()"><img id="relaxe_heart"
+                                    src="./static/image/79.gif" alt=""></button></i>
+                    </div>
+                </a>
+            </div>
+        </footer>
+
+    </div>
+  
+   
+    <!--Buttons -->
+    <!-- Top -->
+    <div>
+        <button> <a href="#Appliances"><img id="top" src="./static/image/27.png" alt="top"></a></button><br><br>
+    </div>
+    <!-- Middle(Center) -->
+    <div>
+        <button> <a href="#ready_to_delivery"><img id="top1" src="./static/image/23.png"
+                    alt="top"></a></button><br><br>
+    </div>
+    <!-- Last(End) -->
+    <div>
+        <button><a href="#hero"><img id="top2" src="./static/image/24.jfif" alt="top"></a></button><br><br>
+    </div>
+    <script src="./static/js/home.js"></script>
+</body>
+</html>
